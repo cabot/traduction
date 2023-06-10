@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * @package phpBB Extension - Modification de la traduction
+ * @package phpBB Extension - Translation modification
  * @copyright (c) 2023 cabot
  * @license GNU General Public License, version 2 (GPL-2.0)
  *
