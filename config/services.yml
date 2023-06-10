@@ -1,0 +1,8 @@
+services:
+    cabot.traduction.listener:
+        class: cabot\traduction\event\listener
+        arguments:
+            - '@language'
+            - '@template'
+        tags:
+            - { name: event.listener }
