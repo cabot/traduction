@@ -1,7 +1,7 @@
 {
-    "name": "cabot/traduction",
+    "name": "cabot/translation",
     "type": "phpbb-extension",
-    "description": "Permet de modifier la traduction sans modifier les fichiers",
+    "description": "Simple phpBB3 extension to modify translation. ",
     "version": "1.0.0",
     "time": "2023-06-10",
     "license": "GPL-2.0",
@@ -16,7 +16,7 @@
         "php": ">=5.3.3",
     },
     "extra": {
-        "display-name": "Modification de la traduction",
+        "display-name": "Translation modification",
         "soft-require": {
             "phpbb/phpbb": "3.2.0"
         }
