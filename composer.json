@@ -2,9 +2,10 @@
     "name": "cabot/translation",
     "type": "phpbb-extension",
     "description": "Simple phpBB3 extension to modify translation. ",
+    "homepage": "https://github.com/cabot/translation",
     "version": "1.0.0",
     "time": "2023-06-10",
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-only",
     "authors": [
         {
             "name": "cabot",
@@ -13,12 +14,12 @@
         }
     ],
     "require": {
-        "php": ">=5.3.3",
+        "php": ">=5.3.3"
     },
     "extra": {
         "display-name": "Translation modification",
         "soft-require": {
-            "phpbb/phpbb": "3.2.0"
+            "phpbb/phpbb": ">=3.2.0"
         }
     }
 }
