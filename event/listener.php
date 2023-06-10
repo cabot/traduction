@@ -1,12 +1,12 @@
 <?php
 /**
  *
- * @package phpBB Extension - Modification de la traduction
+ * @package phpBB Extension - Translation modification
  * @copyright (c) 2023 cabot
  * @license GNU General Public License, version 2 (GPL-2.0)
  *
  */
-namespace cabot\traduction\event;
+namespace cabot\translation\event;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
@@ -38,6 +38,6 @@ class listener implements EventSubscriberInterface
 	 */
 	public function load_language_setup_after($event)
 	{
-		$this->language->add_lang ('traduction', 'cabot/traduction');
+		$this->language->add_lang ('translation', 'cabot/translation');
 	}
 }
