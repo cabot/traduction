@@ -15,29 +15,20 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
  */
 class listener implements EventSubscriberInterface
 {
-	protected $template;
-	protected $language;
-
-	public function __construct(
-		\phpbb\language\language $language,
-		\phpbb\template\template $template)
-	{
-		$this->language = $language;
-		$this->template = $template;
-	}
-
-	static public function getSubscribedEvents ()
+	public static function getSubscribedEvents()
 	{
 		return [
-			'core.user_setup_after'	=> 'load_language_setup_after',
+			'core.user_setup'	=> 'load_language_on_setup',
 		];
 	}
 
-	/**
-	 * @param array $event
-	 */
-	public function load_language_setup_after($event)
+	public function load_language_on_setup($event)
 	{
-		$this->language->add_lang ('translation', 'cabot/translation');
+		$lang_set_ext = $event['lang_set_ext'];
+		$lang_set_ext[] = [
+			'ext_name'	=> 'cabot/translation',
+			'lang_set'	=> 'translation',
+		];
+		$event['lang_set_ext'] = $lang_set_ext;
 	}
 }

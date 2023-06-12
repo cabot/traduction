@@ -3,8 +3,8 @@
     "type": "phpbb-extension",
     "description": "Simple phpBB3 extension to modify translation. ",
     "homepage": "https://github.com/cabot/translation",
-    "version": "1.0.0",
-    "time": "2023-06-10",
+    "version": "1.0.1",
+    "time": "2023-06-12",
     "license": "GPL-2.0-only",
     "authors": [
         {
